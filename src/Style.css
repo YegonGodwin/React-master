@@ -32,10 +32,16 @@ body {
     border: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    overflow: hidden; /* Prevents image overflow */
   }
   
   .card:hover {
     transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crops image to fit without stretching */
   }
   
   .card-title {
