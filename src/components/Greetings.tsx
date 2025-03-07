@@ -1,14 +1,15 @@
-interface AppGreet {
-  name: string;
-  city: string;
-}
+function Greetings() {
+  const Ninjas = ["Mary", "Jane", "Caroline", "Grace"];
 
-function Greetings(props: AppGreet) {
   return (
-    <>
-      <h3>Hello, {props.name}</h3>
-      <p>Are you from {props.city}</p>
-    </>
+    <div>
+      <h1>Ninja Greetings</h1>
+      <ul>
+        {Ninjas.map((ninja, index) => (
+          <li key={index}>{ninja}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

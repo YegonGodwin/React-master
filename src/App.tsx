@@ -5,8 +5,7 @@ function App() {
   return (
     <>
       <section>
-        <Greetings name="Godwin" city="Nakuru" />
-        <Greetings name="Desmond" city="Nairobi" />
+        <Greetings />
       </section>
     </>
   );
