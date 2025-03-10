@@ -1,9 +1,9 @@
-import BookCard from "./components/BookCard";
+import Names from "./components/Names";
 
 function App() {
   return (
     <>
-      <BookCard />
+      <Names />
     </>
   );
 }
