@@ -1,4 +1,5 @@
 // src/components/Form.js
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import axios from "axios"; // Install with: npm install axios
 
@@ -27,36 +28,43 @@ function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Name:</label>
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label>Email:</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <div className="container justify-content-center m5 mb-3">
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Name:</label>
+          <input
+            className="form-control"
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input
+            className="form-control"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            className="form-control"
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </div>
+        <button className="btn btn-outline-success" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   );
 }
 
