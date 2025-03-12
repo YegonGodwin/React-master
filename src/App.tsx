@@ -1,9 +1,11 @@
-import Names from "./components/Names";
+// import Names from "./components/Names";
+import Form from "./components/Form";
 
 function App() {
   return (
     <>
-      <Names />
+      <Form />
+      {/* <Names /> */}
     </>
   );
 }
