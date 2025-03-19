@@ -32,7 +32,10 @@ function Form() {
     <div className="container justify-content-center m5 mb-3">
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name:</label>
+          <h2 className="text-primary">React Form with Axios POST Request</h2>
+        </div>
+        <div>
+          <label>Full Name:</label>
           <input
             className="form-control"
             type="text"
@@ -61,6 +64,7 @@ function Form() {
             onChange={handleChange}
           />
         </div>
+        <br />
         <button className="btn btn-outline-success" type="submit">
           Submit
         </button>
